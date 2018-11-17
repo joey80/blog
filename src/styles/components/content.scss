@@ -1,0 +1,23 @@
+// ===========================================
+// Content
+// ===========================================
+
+.content {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 6rem;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    &__container {
+        flex-grow: 2;
+
+        @include tablet {
+            padding-right: 3rem;
+        }
+    }
+}

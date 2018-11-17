@@ -1,0 +1,12 @@
+// ===========================================
+// Sidebar
+// ===========================================
+
+.sidebar {
+    min-width: 30%;
+
+    @include tablet {
+        padding: 2rem;
+        border-left: 1px dashed #d4d4d4;
+    }
+}

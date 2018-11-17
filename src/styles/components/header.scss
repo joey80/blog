@@ -5,10 +5,30 @@
 .header {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 0.2rem;
-    border-bottom: 1px dashed #d4d4d4;
+
+    &__upper {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 0.2rem;
+        // border-bottom: 1px dashed #d4d4d4;
+    }
+
+    &__lower {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        margin: 1rem 0 1rem 0;
+        // padding-bottom: 1rem;
+        // border-bottom: 1px dashed #d4d4d4;
+    }
 
     &__logo {
         text-align: left;
@@ -17,7 +37,7 @@
     }
 
     &__login {
-        font-size: 0.8rem;
+        // font-size: 0.8rem;
         color: #e15b64;
         border: 1px solid rgba(88.23529411764706%,35.68627450980393%,39.21568627450983%,0.37);
         border-radius: 8px;
