@@ -13,10 +13,14 @@
         text-align: left;
 
         &__field {
-            width: 400px;
-            border-radius: 8px;
+            width: 200px;
+            border-radius: 6px;
             padding: 0.2rem 0.2rem 0.2rem 0.4rem;
             border: 1px solid #d4d4d4;
+
+            @include tablet {
+                width: 400px;
+            }
         }
     }
 

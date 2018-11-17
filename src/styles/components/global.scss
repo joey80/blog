@@ -60,7 +60,7 @@ small {
     padding: 2rem;
     min-height: 100vh;
 
-    @include tablet {
+    @include desktop {
         max-width: 90%;
     }
 }

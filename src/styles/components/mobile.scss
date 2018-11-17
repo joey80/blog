@@ -1,0 +1,16 @@
+// ===========================================
+// Mobile
+// ===========================================
+
+.mobile {
+
+    &__menu {
+        display: none;
+
+        &--show {
+            display: block;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
