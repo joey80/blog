@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    background-color: #edeff0;
     color: #323232;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -55,12 +56,34 @@ small {
 .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 3rem auto 3rem auto;
     width: 100%;
     padding: 2rem;
     min-height: 100vh;
+    background-color: #fff;
+    border-radius: 5px;
 
     @include desktop {
         max-width: 90%;
+    }
+
+    &--bump {
+        margin-top: 6rem;
+    }
+}
+
+.button {
+    color: #ee7749;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem 0.3rem 1rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: #000;
+        text-decoration: underline;
     }
 }

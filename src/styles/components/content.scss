@@ -7,7 +7,7 @@
     flex-grow: 2;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 6rem;
+    padding-top: 2rem;
 
     @include tablet {
         flex-direction: row;

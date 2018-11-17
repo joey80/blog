@@ -5,76 +5,26 @@
 .header {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
 
-    &__upper {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
+    &__container {
+        position: fixed;
+        top: 0;
+        background-color: #3e474f;
+        color: #fff;
         width: 100%;
-        align-items: center;
-        padding-bottom: 0.2rem;
-        border-bottom: 1px solid #f8f8f8;
-    }
-
-    &__lower {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        margin: 1rem 0 1rem 0;
+        padding: 0.5rem;
     }
 
     &__logo {
         text-align: left;
         flex-grow: 4;
-        color: #009DD3;
-        font-size: 3rem;
-        margin: 1.414rem 0 0.5rem;
+        font-size: 2rem;
         font-family: 'Raleway', sans-serif;
-        text-transform: capitalize;
-        letter-spacing: -0.12rem;
-        line-height: 1.2;
     }
 
-    &__login {
-        color: #ee7749;
-        border: 1px solid rgba(88.23529411764706%,35.68627450980393%,39.21568627450983%,0.37);
-        border-radius: 6px;
-        font-size: 0.8rem;
-        padding: 0.4rem 1rem 0.4rem 1rem;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-            cursor: pointer;
-            color: #fff;
-            border: 1px solid transparent;
-            background-color: #ee7749;
-        }
-    }
-
-    &__links {
-
-        &__item {
-            margin-left: 1rem;
-        }
-    }
-
-    &__icon {
-
-        &__container {
-            display: none;
-
-            @include tablet {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                flex-grow: 1;
-            }
-        }
-    }
 }
