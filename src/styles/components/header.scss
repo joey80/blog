@@ -1,0 +1,52 @@
+// ===========================================
+// Header
+// ===========================================
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px dashed #d4d4d4;
+
+    &__logo {
+        text-align: left;
+        flex-grow: 4;
+        color: #849b87;
+    }
+
+    &__login {
+        font-size: 0.8rem;
+        color: #e15b64;
+        border: 1px solid rgba(88.23529411764706%,35.68627450980393%,39.21568627450983%,0.37);
+        border-radius: 8px;
+        padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            border: 1px solid transparent;
+            background-color: #e15b64;
+        }
+    }
+
+    &__links {
+
+        &__item {
+            margin-left: 1rem;
+        }
+    }
+
+    &__icon {
+
+        &__container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+    }
+}
