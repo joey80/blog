@@ -234,13 +234,16 @@ small {
   width: 100%;
   padding: 2rem;
   min-height: 100vh;
-  background-color: #fff;
   border-radius: 5px; }
   @media (min-width: 1025px) {
     .container {
       max-width: 90%; } }
+  .container--white {
+    background-color: #fff; }
   .container--bump {
     margin-top: 6rem; }
+  .container--nomargin {
+    margin: 0 auto; }
 
 .button {
   color: #ee7749;
@@ -254,13 +257,6 @@ small {
     cursor: pointer;
     color: #000;
     text-decoration: underline; }
-
-.mobile__menu {
-  display: none; }
-  .mobile__menu--show {
-    display: block;
-    position: absolute;
-    top: 0; }
 
 .header {
   display: flex;
@@ -276,12 +272,43 @@ small {
     background-color: #3e474f;
     color: #fff;
     width: 100%;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    transition: all 0.3s ease-in-out;
+    height: 70px;
+    overflow: hidden; }
+    .header__container--show {
+      height: 200px;
+      transition: all 0.3s ease-in-out; }
   .header__logo {
+    display: flex;
     text-align: left;
+    align-items: center;
     flex-grow: 4;
     font-size: 2rem;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Montserrat', sans-serif; }
+    .header__logo__icon {
+      margin: 0 0.8rem 0 0.8rem;
+      color: #5A666F;
+      font-size: 1.2rem; }
+      @media (min-width: 768px) {
+        .header__logo__icon {
+          font-size: 1.4rem; } }
+  .header__links {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem; }
+    @media (min-width: 768px) {
+      .header__links {
+        max-width: 90%; } }
+    .header__links__item {
+      display: inline-block;
+      margin-right: 1rem;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        .header__links__item {
+          font-size: 1.5rem; } }
 
 .nav {
   width: 100%; }
@@ -298,7 +325,13 @@ small {
       border: 1px solid #d4d4d4; }
   .nav__menu {
     text-align: right;
-    margin-left: 3rem; }
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .nav__menu {
+        margin-left: 3rem;
+        font-size: 1.5rem; } }
 
 .content {
   display: flex;
