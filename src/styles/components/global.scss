@@ -60,15 +60,22 @@ small {
     width: 100%;
     padding: 2rem;
     min-height: 100vh;
-    background-color: #fff;
     border-radius: 5px;
 
     @include desktop {
         max-width: 90%;
     }
 
+    &--white {
+        background-color: #fff;
+    }
+
     &--bump {
         margin-top: 6rem;
+    }
+
+    &--nomargin {
+        margin: 0 auto;
     }
 }
 
