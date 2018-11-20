@@ -331,7 +331,8 @@ small {
     text-align: right;
     margin-left: 2rem;
     font-size: 1.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 20px; }
     @media (min-width: 768px) {
       .nav__menu {
         margin-left: 3rem;
@@ -340,13 +341,16 @@ small {
     transition: all 0.3s ease-in-out;
     border: 1px solid transparent;
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-image: url("/../../../../assets/images/profile.jpg");
     width: 40px;
     height: 40px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    border: 1px solid #fff; }
     .nav__avatar:hover {
       cursor: pointer;
-      border: 1px solid #000;
+      box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.43);
       transition: all 0.3s ease-in-out; }
 
 .content {
