@@ -12,12 +12,16 @@ html {
 }
 
 body {
-    background-color: #edeff0;
-    color: #323232;
+    background-color: #54a1b1;
+    color: #2c3030;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.65;
     overflow-x: hidden;
+
+    @include tablet {
+        background-color: #f1f1f7;
+    }
 }
 
 p {
@@ -57,7 +61,7 @@ small {
     display: flex;
     flex-direction: column;
     margin: 3rem auto 3rem auto;
-    width: 100%;
+    width: 95%;
     padding: 2rem;
     min-height: 100vh;
     border-radius: 5px;
