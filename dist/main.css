@@ -245,6 +245,9 @@ small {
     background-color: #fff; }
   .container--bump {
     margin-top: 6rem; }
+    @media (min-width: 768px) {
+      .container--bump {
+        margin-top: 8rem; } }
   .container--nomargin {
     margin: 0 auto; }
 
