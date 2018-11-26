@@ -279,7 +279,8 @@ small {
     color: #fff;
     width: 100%;
     transition: all 0.3s ease-in-out;
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 9; }
   .header__logo {
     display: flex;
     text-align: left;
@@ -297,14 +298,15 @@ small {
         .header__logo__icon {
           font-size: 1.4rem; } }
   .header__links {
-    display: none;
+    position: absolute;
+    display: flex;
     flex-direction: row;
     margin: 0 auto;
     width: 100%;
-    padding: 2rem; }
-    @media (min-width: 768px) {
-      .header__links {
-        max-width: 90%; } }
+    padding: 2rem;
+    background-color: #54a1b1;
+    transform: translateY(-500px);
+    transition: all 0.3s ease-in-out; }
     .header__links__container {
       display: flex;
       flex-direction: column;
@@ -320,7 +322,7 @@ small {
       font-size: 1rem; }
       @media (min-width: 768px) {
         .header__links__item {
-          font-size: 1.5rem; } }
+          font-size: 0.8rem; } }
     .header__links__section {
       width: 100%;
       margin-bottom: 1rem; }
@@ -329,7 +331,11 @@ small {
           margin-bottom: 0;
           max-width: 30%; } }
     .header__links--show {
-      display: flex; }
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out; }
+      @media (min-width: 768px) {
+        .header__links--show {
+          transform: translateY(-50px); } }
 
 .nav {
   width: 100%; }

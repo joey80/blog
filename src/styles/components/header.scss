@@ -17,9 +17,9 @@
         background-color: #54a1b1;
         color: #fff;
         width: 100%;
-        // padding: 0.5rem;
         transition: all 0.3s ease-in-out;
         overflow: hidden;
+        z-index: 9;
     }
 
     &__logo {
@@ -46,15 +46,15 @@
     }
 
     &__links {
-        display: none;
+        position: absolute;
+        display: flex;
         flex-direction: row;
         margin: 0 auto;
         width: 100%;
         padding: 2rem;
-
-        @include tablet {
-            max-width: 90%;
-        }
+        background-color: #54a1b1;
+        transform: translateY(-500px);
+        transition: all 0.3s ease-in-out;
 
         &__container {
             display: flex;
@@ -74,7 +74,7 @@
             font-size: 1rem;
 
             @include tablet {
-                font-size: 1.5rem;
+                font-size: 0.8rem;
             }
         }
 
@@ -89,7 +89,12 @@
         }
 
         &--show {
-            display: flex;
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+
+            @include tablet {
+                transform: translateY(-50px);
+            }
         }
     }
 
