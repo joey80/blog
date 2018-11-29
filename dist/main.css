@@ -275,19 +275,18 @@ small {
   .header__container {
     position: fixed;
     top: 0;
-    background-color: #54a1b1;
+    background-color: #002a32;
     color: #fff;
     width: 100%;
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-    z-index: 9; }
+    transition: all 0.3s ease-in-out; }
   .header__logo {
     display: flex;
     text-align: left;
     align-items: center;
     flex-grow: 4;
     font-size: 2.5rem;
-    font-family: 'Sansita', sans-serif; }
+    font-family: 'Sansita', sans-serif;
+    color: #54a1b1; }
     .header__logo__big {
       font-size: 3.5rem; }
     .header__logo__icon {
@@ -298,7 +297,6 @@ small {
         .header__logo__icon {
           font-size: 1.4rem; } }
   .header__links {
-    position: absolute;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -306,7 +304,8 @@ small {
     padding: 2rem;
     background-color: #54a1b1;
     transform: translateY(-500px);
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    z-index: -9; }
     .header__links__container {
       display: flex;
       flex-direction: column;
@@ -386,7 +385,7 @@ small {
     .nav__avatar:hover {
       cursor: pointer;
       border: 2px solid #fff;
-      box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 20px 4px rgba(84, 161, 177, 0.4);
       transition: all 0.2s ease-in-out; }
 
 .content {

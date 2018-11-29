@@ -14,12 +14,10 @@
     &__container {
         position: fixed;
         top: 0;
-        background-color: #54a1b1;
+        background-color: #002a32;
         color: #fff;
         width: 100%;
         transition: all 0.3s ease-in-out;
-        overflow: hidden;
-        z-index: 9;
     }
 
     &__logo {
@@ -29,6 +27,7 @@
         flex-grow: 4;
         font-size: 2.5rem;
         font-family: 'Sansita', sans-serif;
+        color: #54a1b1;
 
         &__big {
             font-size: 3.5rem;
@@ -46,7 +45,7 @@
     }
 
     &__links {
-        position: absolute;
+        // position: absolute;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
@@ -55,6 +54,7 @@
         background-color: #54a1b1;
         transform: translateY(-500px);
         transition: all 0.3s ease-in-out;
+        z-index: -9;
 
         &__container {
             display: flex;
