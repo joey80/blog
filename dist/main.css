@@ -262,9 +262,11 @@ small {
     text-decoration: underline; }
 
 .header {
+  position: relative;
   color: #fff;
   transition: all 0.3s ease-in-out;
-  background-color: #002a32; }
+  background-color: #002a32;
+  z-index: 2; }
   .header__container {
     display: flex;
     flex-wrap: nowrap;
