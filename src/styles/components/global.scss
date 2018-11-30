@@ -75,11 +75,7 @@ small {
     }
 
     &--bump {
-        margin-top: 6rem;
-
-        @include tablet {
-            margin-top: 8rem;
-        }
+        margin-top: 8rem;
     }
 
     &--nomargin {
