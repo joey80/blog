@@ -3,9 +3,11 @@
 // ===========================================
 
 .header {
+    position: relative;
     color: #fff;
     transition: all 0.3s ease-in-out;
     background-color: #002a32;
+    z-index: 2;
 
     &__container {
         display: flex;
