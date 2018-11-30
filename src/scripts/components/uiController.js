@@ -41,6 +41,12 @@ const uiController = (function() {
 
     const setupEventListeners = () => {
         menuButton.addEventListener('click', toggleMenu);
+        window.addEventListener('scroll', function() {
+            if (navMenu.classList.contains('header__links--show')) {
+                toggleMenu();
+                return;
+            }
+        });
     };
 
     return {
