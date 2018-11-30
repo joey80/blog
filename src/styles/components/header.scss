@@ -3,21 +3,18 @@
 // ===========================================
 
 .header {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 90%;
-    margin: 0 auto;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    background-color: #002a32;
 
     &__container {
-        position: fixed;
-        top: 0;
-        background-color: #002a32;
-        color: #fff;
-        width: 100%;
-        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     &__logo {
@@ -45,16 +42,15 @@
     }
 
     &__links {
-        // position: absolute;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
         width: 100%;
         padding: 2rem;
         background-color: #54a1b1;
-        transform: translateY(-500px);
+        transform: translateY(-100%);
         transition: all 0.3s ease-in-out;
-        z-index: -9;
+        z-index: -1;
 
         &__container {
             display: flex;
@@ -87,6 +83,7 @@
             width: 100%;
             margin-bottom: 1rem;
             color: #fff;
+            text-align: center;
 
             @include tablet {
                 margin-bottom: 0;
@@ -99,9 +96,15 @@
             transition: all 0.3s ease-in-out;
 
             @include tablet {
-                transform: translateY(-50px);
+                transform: translateY(0);
             }
         }
+    }
+
+    &__section {
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
 }
