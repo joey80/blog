@@ -17,6 +17,10 @@
         align-items: center;
         max-width: 90%;
         margin: 0 auto;
+
+        @include tablet {
+            padding: 0 2rem 0 2rem;
+        }
     }
 
     &__logo {
@@ -96,6 +100,22 @@
             @include tablet {
                 margin-bottom: 0;
                 max-width: 30%;
+            }
+
+            &:first-of-type {
+                text-align: center;
+
+                @include tablet {
+                    text-align: left;
+                }
+            }
+
+            &:last-of-type {
+                text-align: center;
+
+                @include tablet {
+                    text-align: right;
+                }
             }
         }
 

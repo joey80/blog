@@ -275,6 +275,9 @@ small {
     align-items: center;
     max-width: 90%;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .header__container {
+        padding: 0 2rem 0 2rem; } }
   .header__logo {
     display: flex;
     text-align: left;
@@ -335,6 +338,16 @@ small {
         .header__links__section {
           margin-bottom: 0;
           max-width: 30%; } }
+      .header__links__section:first-of-type {
+        text-align: center; }
+        @media (min-width: 768px) {
+          .header__links__section:first-of-type {
+            text-align: left; } }
+      .header__links__section:last-of-type {
+        text-align: center; }
+        @media (min-width: 768px) {
+          .header__links__section:last-of-type {
+            text-align: right; } }
     .header__links--show {
       transform: translateY(-10px);
       transition: all 0.3s ease-in-out; }
