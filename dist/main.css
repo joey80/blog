@@ -406,6 +406,31 @@ small {
       box-shadow: 0px 0px 20px 4px rgba(84, 161, 177, 0.4);
       transition: all 0.2s ease-in-out; }
 
+.popup {
+  position: absolute;
+  top: -10px;
+  left: -80px;
+  width: 120px;
+  height: 100px;
+  background-color: red;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0); }
+  @media (min-width: 768px) {
+    .popup {
+      width: 150px; } }
+  .popup__container {
+    position: relative; }
+  .popup--show {
+    top: 50px;
+    left: -20px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1); }
+    @media (min-width: 768px) {
+      .popup--show {
+        top: 65px;
+        left: -10px; } }
+
 .content {
   display: flex;
   flex-grow: 2;

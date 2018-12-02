@@ -12,7 +12,11 @@ const uiController = (function() {
     const navMenu = document.querySelector('.header__links');
     const hamburger = document.querySelector('.hamburger');
     const links = document.querySelector('.header__links__container');
+    const avatar = document.querySelector('.nav__avatar');
+    const popupMenu = document.querySelector('.popup');
     
+
+
     // Toggles the menu
     const toggleMenu = () => {
         if (navMenu.classList.contains('header__links--show')) {
@@ -39,12 +43,41 @@ const uiController = (function() {
         }
     };
 
+
+
+    const openAvatarMenu = () => {
+        popupMenu.classList.add('popup--show');
+    };
+
+
+
+    const closeAvatarMenu = () => {
+        popupMenu.classList.remove('popup--show');
+    };
+
+
+    
     const setupEventListeners = () => {
-        menuButton.addEventListener('click', toggleMenu);
+        // The avatar menu shouldn't stay open if you open the menu
+        menuButton.addEventListener('click', function() {
+            toggleMenu();
+            closeAvatarMenu()
+        });
+
+        // Close both menus on scroll 
         window.addEventListener('scroll', function() {
             if (navMenu.classList.contains('header__links--show')) {
                 toggleMenu();
-                return;
+                closeAvatarMenu()
+            }
+        });
+
+        // Toggle the avatar menu
+        avatar.addEventListener('click', function() {
+            if (!popupMenu.classList.contains('popup--show')) {
+                openAvatarMenu();
+            } else {
+                closeAvatarMenu();
             }
         });
     };

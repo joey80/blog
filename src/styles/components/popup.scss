@@ -1,0 +1,36 @@
+// ===========================================
+// Popup
+// ===========================================
+
+.popup {
+    position: absolute;
+    top: -10px;
+    left: -80px;
+    width: 120px;
+    height: 100px;
+    background-color: red;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+
+    @include tablet {
+        //top: 15px;
+        width: 150px;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &--show {
+        top: 50px;
+        left: -20px;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+
+        @include tablet {
+            top: 65px;
+            left: -10px;
+        }
+    }
+}
