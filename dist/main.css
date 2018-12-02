@@ -386,6 +386,7 @@ small {
         margin-left: 3rem;
         font-size: 1.5rem; } }
   .nav__avatar {
+    position: relative;
     transition: all 0.2s ease-in-out;
     border: 1px solid transparent;
     background-color: #fff;
@@ -395,11 +396,24 @@ small {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    z-index: 2; }
     @media (min-width: 768px) {
       .nav__avatar {
         width: 50px;
         height: 50px; } }
+    .nav__avatar:after {
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      content: '\F107';
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 900;
+      opacity: 0.5;
+      transform: translate(2.6rem, 1.2rem); }
+      @media (min-width: 768px) {
+        .nav__avatar:after {
+          transform: translate(3.3rem, 1.8rem); } }
     .nav__avatar:hover {
       cursor: pointer;
       border: 2px solid #fff;
@@ -408,8 +422,8 @@ small {
 
 .popup {
   position: absolute;
-  top: -10px;
-  left: -80px;
+  top: -20px;
+  left: -50px;
   width: 120px;
   height: 100px;
   background-color: red;
@@ -418,11 +432,24 @@ small {
   transform: scale(0); }
   @media (min-width: 768px) {
     .popup {
+      top: -15px;
+      left: -70px;
       width: 150px; } }
+  .popup:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    content: '\F0DE';
+    color: red;
+    font-size: 2rem;
+    font-weight: 900;
+    transform: translate(1.4rem, -1.4rem); }
+    @media (min-width: 768px) {
+      .popup:before {
+        transform: translate(1.3rem, -1.4rem); } }
   .popup__container {
     position: relative; }
   .popup--show {
-    top: 50px;
+    top: 55px;
     left: -20px;
     transition: all 0.3s ease-in-out;
     transform: scale(1); }
