@@ -1,0 +1,83 @@
+// ===========================================
+// Nav
+// ===========================================
+
+.nav {
+    width: 100%;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        display: none;
+        text-align: left;
+
+        @include tablet {
+            display: block;
+        }
+
+        &__field {
+            width: 200px;
+            border-radius: 6px;
+            padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+            border: 1px solid #d4d4d4;
+        }
+    }
+
+    &__menu {
+        text-align: right;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 20px;
+
+        @include tablet {
+            margin-left: 3rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__avatar {
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        border: 1px solid transparent;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('~/assets/images/profile.jpg');
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        z-index: 2;
+
+        @include tablet {
+            width: 50px;
+            height: 50px;
+        }
+
+        &:after {
+            display: inline-block;
+            font-family: 'Font Awesome 5 Free';
+            content: '\f107';
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 900;
+            opacity: 0.5;
+            transform: translate(2.6rem, 1.2rem);
+    
+            @include tablet {
+                transform: translate(3.3rem, 1.8rem);
+            }
+         }
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid #fff;
+            box-shadow: 0px 0px 20px 4px rgba(84,161,177, 0.4);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}

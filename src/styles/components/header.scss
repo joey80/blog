@@ -1,0 +1,142 @@
+// ===========================================
+// Header
+// ===========================================
+
+.header {
+    position: relative;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    // background-color: #002a32;
+    background-color: #2b2f3e;
+    z-index: 2;
+
+    &__container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+
+        @include tablet {
+            padding: 0 2rem 0 2rem;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        flex-grow: 4;
+        font-size: 2.5rem;
+        font-family: 'Sansita', sans-serif;
+        // color: #54a1b1;
+        color: #2fe7ba;
+
+        &__big {
+            font-size: 3.5rem;
+        }
+
+        &__icon {
+            margin: 0 0.8rem 0 0.8rem;
+            color: #5A666F;
+            font-size: 1.2rem;
+
+            @include tablet {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        padding: 2rem;
+        // background-color: #54a1b1;
+        // background-color: #2B2F3EC4;
+        background-color: #444b58;
+        transform: translateY(-100%);
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 100%;
+            transform: translateY(-4rem);
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            @include desktop {
+                max-width: 90%;
+            }
+
+            &--show {
+                transform: translateY(0);
+                transition: all 0.3s ease-out;
+            }
+        }
+
+        &__item {
+            display: inline-block;
+            margin-right: 1rem;
+            font-size: 1rem;
+
+            @include tablet {
+                font-size: 0.8rem;
+            }
+        }
+
+        &__section {
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-align: center;
+
+            @include tablet {
+                margin-bottom: 0;
+                max-width: 30%;
+            }
+
+            &:first-of-type {
+                text-align: center;
+
+                @include tablet {
+                    text-align: left;
+                }
+            }
+
+            &:last-of-type {
+                text-align: center;
+
+                @include tablet {
+                    text-align: right;
+                }
+            }
+        }
+
+        &--show {
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+
+            @include tablet {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__section {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}
