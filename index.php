@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Blog CMS developed with PHP created by Joey Leger">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>blogStorn</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Sansita">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="dist/main.css">
@@ -76,6 +76,7 @@
         </section>
         
 
-        <script type="module" src="./dist/bundle.js"></script>
+        <script type="module" src="main.js"></script>
+        <script nomodule src="./dist/bundle.js"></script>
     </body>
 </html>
