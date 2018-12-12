@@ -1,1 +1,6 @@
-{}
+{
+    "name": "blogster/blogster",
+    "description": "Cool PHP Blog",
+    "type": "project",
+    "require": {}
+}
