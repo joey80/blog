@@ -68,7 +68,7 @@ const uiController = (function() {
         window.addEventListener('scroll', function() {
             if (navMenu.classList.contains('header__links--show')) {
                 toggleMenu();
-                closeAvatarMenu()
+                closeAvatarMenu();
             }
         });
 
