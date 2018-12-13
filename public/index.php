@@ -79,7 +79,6 @@
         </section>
         
 
-        <script type="module" src="js/main.js"></script>
-        <script nomodule src="js/bundle.js"></script>
+        <script src="js/bundle.js"></script>
     </body>
 </html>
