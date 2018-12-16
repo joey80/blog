@@ -357,7 +357,13 @@ small {
   .header__section {
     position: fixed;
     top: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 999999; }
+
+#map {
+  max-width: 90%;
+  height: 300px;
+  margin-bottom: 3rem; }
 
 .nav {
   width: 100%; }

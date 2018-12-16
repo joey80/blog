@@ -1,5 +1,5 @@
 <?php
-    $test = 'test';
+    $test = 'Leaflet Map Test';
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -11,6 +11,7 @@
         <title>blogStorn</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Sansita">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -59,6 +60,7 @@
             <section class="content">
                 <div class="content__container">
                     <h1><?php echo $test ?></h1>
+                    <div id="map"></div>
                     <p>Lorem ipsum dolor sit amet, mea virtute eruditi ad. Pri ea nostro oportere, te eos ornatus assentior.
                         No malorum nominati mel, luptatum deserunt posidonium sea te, eam id inani denique. Falli zril
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.</p>
