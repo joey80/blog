@@ -367,25 +367,23 @@ small {
     width: 100%;
     z-index: 999999; }
 
-a:link {
-  background: linear-gradient(to bottom, #444b58 0%, #444b58 100%);
+a.main:link {
+  background: linear-gradient(to bottom, rgba(68, 75, 88, 0.3) 0%, rgba(68, 75, 88, 0.3) 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
-  background-size: 2px 2px;
+  background-size: 1px 1px;
   text-decoration: none;
   padding: 0.2rem;
-  transition: background-size 0.3s;
-  font-style: italic; }
+  transition: background-size 0.3s; }
 
-a:visited {
+a.main:visited {
   color: #2b2f3e; }
 
-a:active {
+a.main:active {
   color: #2b2f3e; }
 
-a:hover {
-  background-size: 4px 50px;
-  color: #fff; }
+a.main:hover {
+  background-size: 4px 50px; }
 
 #map {
   width: 100%;

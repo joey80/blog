@@ -69,7 +69,7 @@
                         No malorum nominati mel, luptatum deserunt posidonium sea te, eam id inani denique. Falli zril
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.
                         <br />
-                        <a href="single.php">Read More ...</a></p>
+                        <a href="single.php" class="main">Read More ...</a></p>
                 </div>
                 <div class="sidebar">
                     <h3>I'm the sidebar</h3>
