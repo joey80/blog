@@ -62,9 +62,13 @@ small {
     flex-direction: column;
     margin: 3rem auto 3rem auto;
     width: 95%;
-    padding: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
     min-height: 100vh;
     border-radius: 5px;
+
+    @include tablet {
+        padding: 2rem;
+    }
 
     @include desktop {
         max-width: 90%;
@@ -80,21 +84,5 @@ small {
 
     &--nomargin {
         margin: 0 auto;
-    }
-}
-
-.button {
-    color: #ee7749;
-    border: 1px solid transparent;
-    background-color: transparent;
-    border-radius: 6px;
-    font-size: 0.8rem;
-    padding: 0.4rem 1rem 0.3rem 1rem;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        cursor: pointer;
-        color: #000;
-        text-decoration: underline;
     }
 }

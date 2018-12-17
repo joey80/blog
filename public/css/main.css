@@ -235,9 +235,12 @@ small {
   flex-direction: column;
   margin: 3rem auto 3rem auto;
   width: 95%;
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   min-height: 100vh;
   border-radius: 5px; }
+  @media (min-width: 768px) {
+    .container {
+      padding: 2rem; } }
   @media (min-width: 1025px) {
     .container {
       max-width: 90%; } }
@@ -277,7 +280,11 @@ small {
     margin: 0 auto; }
     @media (min-width: 768px) {
       .header__container {
+        max-width: 95%;
         padding: 0 2rem 0 2rem; } }
+    @media (min-width: 1025px) {
+      .header__container {
+        max-width: 90%; } }
   .header__logo {
     display: flex;
     text-align: left;
@@ -359,6 +366,26 @@ small {
     top: 0;
     width: 100%;
     z-index: 999999; }
+
+a:link {
+  background: linear-gradient(to bottom, #444b58 0%, #444b58 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  text-decoration: none;
+  padding: 0.2rem;
+  transition: background-size 0.3s;
+  font-style: italic; }
+
+a:visited {
+  color: #2b2f3e; }
+
+a:active {
+  color: #2b2f3e; }
+
+a:hover {
+  background-size: 4px 50px;
+  color: #fff; }
 
 #map {
   width: 100%;
