@@ -1,9 +1,12 @@
 <?php
 
-/*
-* App Core Class
-* Creates URL & Loads core controller
-* URL format = /controller/method/params
+/**
+* Core.php - Core controller
+*
+* Author - Joey Leger (2018)
+* Description - Creates URL & Loads core controller
+*               URL format = /controller/method/params
+*
 */
 
 class Core {
@@ -13,15 +16,13 @@ class Core {
     protected $params = [];
 
     public function __construct() {
-        // print_r($this->getUrl());
 
         $url = $this->getUrl();
 
         // Look in controllers for first value
         if (file_exists('../src/controllers/' . ucwords($url[0]) . '.php')) {
-            // If exists, set as controller
+            // If exists, set as controller and then unset the value
             $this->currentController = ucwords($url[0]);
-            // Unset 0 index
             unset($url[0]);
         }
 
@@ -33,10 +34,9 @@ class Core {
 
         // Check for second part of the url
         if (isset($url[1])) {
-            // Check to see if method exists inside controller
+            // Check to see if method exists inside controller and then unset the value
             if (method_exists($this->currentController, $url[1])) {
                 $this->currentMethod = $url[1];
-                // Unset index 1
                 unset($url[1]);
             }
         }
