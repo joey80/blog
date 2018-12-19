@@ -27,7 +27,8 @@ const mapController = (function() {
     // Functions
     const createMap = () => {
         if (map) {
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            const mapStyle = 'cjpugsacx08jh2qqox7gs2qnh';
+            L.tileLayer(`https://api.mapbox.com/styles/v1/joey80/${mapStyle}/tiles/256/{z}/{x}/{y}?access_token={accessToken}`, {
                 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
                 maxZoom: 18,
                 id: 'mapbox.streets',
