@@ -23,3 +23,23 @@ a.main:active {
 a.main:hover {
     background-size: 4px 50px;
 }
+
+a.none:link {
+    color: initial;
+    text-decoration: none;
+}
+
+a.none:visited {
+    color: initial;
+    text-decoration: none;
+}
+
+a.none:active {
+    color: initial;
+    text-decoration: none;
+}
+
+a.none:hover {
+    color: initial;
+    text-decoration: none;
+}

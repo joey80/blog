@@ -17,9 +17,11 @@
         <div class="header__section">
             <div class="header">
                 <div class="header__container">
-                    <div class="header__logo">
-                        blog<span class="header__logo__big">S</span>torn
-                    </div>
+                    <a href="index2.php" class="none">
+                        <div class="header__logo">
+                            blog<span class="header__logo__big">S</span>torn
+                        </div>
+                    </a>
                     <div class="nav__container">
                         <div class="popup__container">
                             <div class="nav__avatar">
@@ -61,17 +63,16 @@
                     <h1><?php echo $test ?></h1>
                 </div>
                 <div class="sidebar">
-                    <h3>I'm the sidebar</h3>
+                    <h2>I'm the sidebar</h2>
                 </div>
             </section>
         </div>
         <section class="footer">
             <div class="footer__container">
-                <h3>I'm the footer</h3>
+                <h2>I'm the footer</h2>
             </div>
         </section>
         
-
         <script src="js/bundle.js"></script>
     </body>
 </html>

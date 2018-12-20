@@ -11,16 +11,17 @@ const mapController = (function() {
 
     // Set up some variables
     const map = document.getElementById('map');
-    let L;
     let mymap;
-    let marker;
     let popup;
 
     // Functions
     const createMap = () => {
-        L = require('leaflet');
-        mymap = L.map('map').setView([37.4316, -78.6569], 8);
+
+        // Set up map variables
+        const L = require('leaflet');
         const mapBoxToken = 'pk.eyJ1Ijoiam9leTgwIiwiYSI6ImNqcHIycWF2ajE1dDQzeG56dDNsdG40ZzAifQ.FvTJQ69PrRFCGl1IVdMzYQ';
+        const mapStyle = 'cjpugsacx08jh2qqox7gs2qnh';
+        mymap = L.map('map').setView([37.4316, -78.6569], 8);
         popup = L.popup();
         const redIcon = new L.Icon({
             iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
@@ -30,8 +31,9 @@ const mapController = (function() {
             popupAnchor: [1, -34],
             shadowSize: [41, 41]
         });
-        marker = L.marker([38.0301, -79.0336], {icon: redIcon}).addTo(mymap);
-        const mapStyle = 'cjpugsacx08jh2qqox7gs2qnh';
+        const marker = L.marker([38.0301, -79.0336], {icon: redIcon}).addTo(mymap);
+        
+        // Create the map
         L.tileLayer(`https://api.mapbox.com/styles/v1/joey80/${mapStyle}/tiles/256/{z}/{x}/{y}?access_token={accessToken}`, {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             maxZoom: 18,
@@ -59,7 +61,7 @@ const mapController = (function() {
 
     return {
         init: function() {
-            if (isVisible(map) === true) {
+            if (isVisible(map)) {
                 createMap();
                 setupEventListeners();
             }

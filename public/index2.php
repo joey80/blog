@@ -18,9 +18,11 @@
         <div class="header__section">
             <div class="header">
                 <div class="header__container">
-                    <div class="header__logo">
-                        blog<span class="header__logo__big">S</span>torn
-                    </div>
+                    <a href="index2.php" class="none">
+                        <div class="header__logo">
+                            blog<span class="header__logo__big">S</span>torn
+                        </div>
+                    </a>
                     <div class="nav__container">
                         <div class="popup__container">
                             <div class="nav__avatar">
@@ -64,7 +66,7 @@
                     <p>Lorem ipsum dolor sit amet, mea virtute eruditi ad. Pri ea nostro oportere, te eos ornatus assentior.
                         No malorum nominati mel, luptatum deserunt posidonium sea te, eam id inani denique. Falli zril
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.</p>
-                    <h1>Hello World</h1>
+                    <h2>Hello World</h2>
                     <p>Lorem ipsum dolor sit amet, mea virtute eruditi ad. Pri ea nostro oportere, te eos ornatus assentior.
                         No malorum nominati mel, luptatum deserunt posidonium sea te, eam id inani denique. Falli zril
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.
@@ -72,17 +74,16 @@
                         <a href="single.php" class="main">Read More ...</a></p>
                 </div>
                 <div class="sidebar">
-                    <h3>I'm the sidebar</h3>
+                    <h2>I'm the sidebar</h2>
                 </div>
             </section>
         </div>
         <section class="footer">
             <div class="footer__container">
-                <h3>I'm the footer</h3>
+                <h2>I'm the footer</h2>
             </div>
         </section>
         
-
         <script src="js/bundle.js"></script>
     </body>
 </html>

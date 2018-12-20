@@ -11,6 +11,8 @@
 export function isVisible(elm) {
     if (elm === null) {
         return false;
+    } else if (elm === 'undefined') {
+        return false;
     } else if (elm.offsetWidth || elm.offsetHeight || elm.getClientRects().length) {
         return true;
     } else {
