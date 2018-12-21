@@ -8,8 +8,6 @@
 *
 */
 
-echo 'inside of controller ';
-
 class Controller {
 
     // Load model
@@ -26,13 +24,11 @@ class Controller {
     // Load view
     public function view($view, $data = []) {
 
-        echo 'hello from view';
-
         // Check for the view file
-        // if (file_exists('../src/views/' . $view . '.php')) {
-        //     require_once '../src/views/' . $view . '.php';
-        // } else {
-        //     die('View does not exist');
-        // }
+        if (file_exists('../src/views/' . $view . '.php')) {
+            require_once '../src/views/' . $view . '.php';
+        } else {
+            die('View does not exist');
+        }
     }
 }
