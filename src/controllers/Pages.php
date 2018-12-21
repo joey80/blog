@@ -7,7 +7,7 @@ class Pages {
     }
 
     public function index() {
-        
+        echo 'hello from index';
     }
 
     public function about($id) {
