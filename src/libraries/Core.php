@@ -32,7 +32,7 @@ class Core {
         require_once '../src/controllers/' . $this->currentController . '.php';
 
         // Instantiate controller class
-        $this->currentController = new $this->currentController();
+        $this->currentController = new $this->currentController;
 
         // Check for second part of the url
         if (isset($url[1])) {
