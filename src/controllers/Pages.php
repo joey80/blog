@@ -6,14 +6,13 @@ class Pages extends Controller {
     }
 
     public function index() {
-        $this->view('index');
+        $this->view('pages/index');
     }
 
     public function single() {
-        $this->view('single');
+        $this->view('pages/single');
     }
 
-    public function about($id) {
-        echo $id;
+    public function about() {
     }
 }
