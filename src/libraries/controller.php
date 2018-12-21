@@ -8,6 +8,8 @@
 *
 */
 
+echo 'inside of controller ';
+
 class Controller {
 
     // Load model
