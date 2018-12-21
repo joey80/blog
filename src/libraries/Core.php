@@ -14,6 +14,7 @@ class Core {
 
     public function __construct() {
 
+        echo 'hello from core';
         $url = $this->getUrl();
 
         // Look in controllers for first value
