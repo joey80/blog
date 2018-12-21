@@ -14,18 +14,14 @@ class Core {
 
     public function __construct() {
 
-        echo 'hello from core';
         $url = $this->getUrl();
 
         // Look in controllers for first value
         if (file_exists('../src/controllers/' . ucwords($url[0]) . '.php')) {
             // If exists, set as controller
-            echo 'yes';
             $this->currentController = ucwords($url[0]);
             // Unset 0 index
             unset($url[0]);
-        } else {
-            echo 'no';
         }
 
         // Require the controller
