@@ -15,7 +15,7 @@
         <header class="header__section">
             <div class="header">
                 <div class="header__container">
-                    <a href="pages/index" class="none">
+                    <a href="../pages/index" class="none">
                         <div class="header__logo">
                             blog<span class="header__logo__big">S</span>torn
                         </div>
