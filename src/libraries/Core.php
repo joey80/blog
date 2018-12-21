@@ -19,16 +19,19 @@ class Core {
         // Look in controllers for first value
         if (file_exists('../src/controllers/' . ucwords($url[0]) . '.php')) {
             // If exists, set as controller
+            echo 'yes';
             $this->currentController = ucwords($url[0]);
             // Unset 0 index
             unset($url[0]);
+        } else {
+            echo 'no';
         }
 
         // Require the controller
         require_once '../src/controllers/' . $this->currentController . '.php';
 
         // Instantiate controller class
-        $this->currentController = new $this->currentController;
+        $this->currentController = new $this->currentController();
 
         // Check for second part of the url
         if (isset($url[1])) {
