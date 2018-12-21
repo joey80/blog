@@ -4,7 +4,8 @@
     echo 'hello from index ';
 
     function __autoload($classname) {
-        require_once('../src/libraries/' . $classname . '.php');
+        require_once('' . $_SERVER['DOCUMENT_ROOT'] . '/src/libraries/' . $classname . '.php');
+        // require_once('../src/libraries/' . $classname . '.php');
     }  
     
     //require_once '../src/libraries/Core.php';
