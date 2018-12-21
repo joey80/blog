@@ -1,9 +1,11 @@
 <?php
 
-/*
-* App Core Class
-* Creates URL & Loads core controller
-* URL format = /controller/method/params
+/**
+* Core.php - Core controller for the app
+*
+* Author - Joey Leger (2018)
+* Description - Creates URL & Loads core controller
+*               URL format = /controller/method/params
 */
 
 class Core {
