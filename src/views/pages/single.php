@@ -7,17 +7,7 @@
                 <div class="content__container">
                     <h1><?php echo $test ?></h1>
                 </div>
-                <div class="sidebar">
-                    <h2>I'm the sidebar</h2>
-                </div>
+                <?php require APPROOT . '/views/inc/sidebar.php'; ?>
             </section>
         </div>
-        <section class="footer">
-            <div class="footer__container">
-                <h2>I'm the footer</h2>
-            </div>
-        </section>
-        
-        <script src="<?php echo URLROOT; ?>/js/bundle.js"></script>
-    </body>
-</html>
+        <?php require APPROOT . '/views/inc/footer.php'; ?>

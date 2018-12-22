@@ -17,17 +17,7 @@
                         <br />
                         <a href="../pages/single" class="main">Read More ...</a></p>
                 </div>
-                <aside class="sidebar">
-                    <h2>I'm the sidebar</h2>
-                </aside>
+                <?php require APPROOT . '/views/inc/sidebar.php'; ?>
             </section>
         </div>
-        <footer class="footer">
-            <div class="footer__container">
-                <h2>I'm the footer</h2>
-            </div>
-        </footer>
-        
-        <script src="<?php echo URLROOT; ?>/js/bundle.js"></script>
-    </body>
-</html>
+        <?php require APPROOT . '/views/inc/footer.php'; ?>
