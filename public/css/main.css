@@ -249,16 +249,15 @@ small {
     margin: 0 auto; }
 
 .button {
-  color: #ee7749;
+  color: #fff;
   border: 1px solid transparent;
-  background-color: transparent;
+  background-color: #ea4d4d;
   border-radius: 6px;
   font-size: 0.8rem;
   padding: 0.4rem 1rem 0.3rem 1rem;
   transition: all 0.2s ease-in-out; }
   .button:hover {
     cursor: pointer;
-    color: #000;
     text-decoration: underline; }
 
 .header {
@@ -365,22 +364,34 @@ small {
     z-index: 999999; }
 
 a.main:link {
-  background: linear-gradient(to bottom, rgba(68, 75, 88, 0.3) 0%, rgba(68, 75, 88, 0.3) 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
+  color: #1f7f79;
+  position: relative;
   text-decoration: none;
-  padding: 0.3rem;
-  transition: background-size 0.3s; }
+  padding-bottom: 2px;
+  transition: all 0.3s ease-in-out; }
+  a.main:link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2db9af;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out; }
 
 a.main:visited {
-  color: #2b2f3e; }
+  color: #1f7f79; }
 
 a.main:active {
-  color: #2b2f3e; }
+  color: #1f7f79; }
 
 a.main:hover {
-  background-size: 4px 50px; }
+  transition: all 0.3s ease-in-out; }
+  a.main:hover:before {
+    visibility: visible;
+    transform: scaleX(1); }
 
 a.none:link {
   color: initial;

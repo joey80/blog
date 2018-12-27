@@ -2,9 +2,9 @@
 
     require_once '../src/config/config.php';
 
-    function __autoload($classname) {
-        require_once('../src/libraries/' . $classname . '.php');
-    }
+    spl_autoload_register(function ($class) {
+        include '../src/libraries/' . $class . '.php';
+    });
 
     // Init core library
     $init = new Core();
