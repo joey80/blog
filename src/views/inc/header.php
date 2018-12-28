@@ -16,19 +16,19 @@
             <div class="header">
                 <div class="header__container">
                     <a href="../pages/index" class="none">
-                        <div class="header__logo">
+                        <div class="header__logo" tabindex="1">
                             blog<span class="header__logo__big">S</span>torn
                         </div>
                     </a>
                     <div class="nav__container">
                         <div class="popup__container">
-                            <div class="nav__avatar">
-                            </div>
+                            <button class="nav__avatar">
+                            </button>
                             <div class="popup"></div>
                         </div>
-                        <div class="nav__menu">
+                        <button class="nav__menu">
                             <i class="fas hamburger fa-bars"></i>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>

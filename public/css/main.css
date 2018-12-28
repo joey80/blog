@@ -43,10 +43,6 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
 
-a:active,
-a:hover {
-  outline-width: 0; }
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -132,13 +128,6 @@ html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
 
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
@@ -289,6 +278,8 @@ small {
     font-size: 2.5rem;
     font-family: 'Sansita', sans-serif;
     color: #2fe7ba; }
+    .header__logo:focus {
+      outline: #08f auto 2px; }
     .header__logo__big {
       font-size: 3.5rem; }
     .header__logo__icon {
@@ -434,12 +425,17 @@ a.none:hover {
     text-align: right;
     margin-left: 2rem;
     font-size: 1.2rem;
+    min-width: 40px;
     cursor: pointer;
-    width: 20px; }
+    background-color: transparent;
+    border: none;
+    color: inherit; }
     @media (min-width: 768px) {
       .nav__menu {
         margin-left: 3rem;
         font-size: 1.5rem; } }
+    .nav__menu:focus {
+      outline: #08f auto 2px; }
   .nav__avatar {
     position: relative;
     transition: all 0.2s ease-in-out;
@@ -457,18 +453,8 @@ a.none:hover {
       .nav__avatar {
         width: 50px;
         height: 50px; } }
-    .nav__avatar:after {
-      display: inline-block;
-      font-family: 'Font Awesome 5 Free';
-      content: '\F107';
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: 900;
-      opacity: 0.5;
-      transform: translate(2.6rem, 1.2rem); }
-      @media (min-width: 768px) {
-        .nav__avatar:after {
-          transform: translate(3.3rem, 1.8rem); } }
+    .nav__avatar:focus {
+      outline: #08f auto 2px; }
     .nav__avatar:hover {
       cursor: pointer; }
       @media (min-width: 768px) {

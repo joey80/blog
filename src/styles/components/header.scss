@@ -37,6 +37,10 @@
         font-family: 'Sansita', sans-serif;
         color: #2fe7ba;
 
+        &:focus {
+            outline: #08f auto 2px;
+        }
+
         &__big {
             font-size: 3.5rem;
         }
