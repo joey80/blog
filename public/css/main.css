@@ -180,10 +180,7 @@ textarea {
   box-sizing: border-box; }
 
 html {
-  font-size: 14px; }
-  @media (min-width: 1025px) {
-    html {
-      font-size: 16px; } }
+  font-size: 16px; }
 
 body {
   background-color: #f1f1f7;
@@ -208,6 +205,7 @@ h1 {
   font-size: 2.441rem; }
 
 h2 {
+  margin-top: 0;
   font-size: 1.953rem; }
 
 h3 {
@@ -426,7 +424,7 @@ a.none:hover {
       border: 1px solid #d4d4d4; }
   .nav__menu {
     text-align: right;
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 1.2rem;
     min-width: 40px;
     cursor: pointer;
@@ -505,8 +503,7 @@ a.none:hover {
   display: flex;
   flex-grow: 2;
   flex-direction: column;
-  flex-wrap: nowrap;
-  padding-top: 2rem; }
+  flex-wrap: nowrap; }
   @media (min-width: 768px) {
     .content {
       flex-direction: row; } }
@@ -520,7 +517,7 @@ a.none:hover {
   min-width: 30%; }
   @media (min-width: 768px) {
     .sidebar {
-      padding: 2rem;
+      padding: 0 2rem 2rem 2rem;
       border-left: 1px dashed #d4d4d4; } }
 
 .footer {

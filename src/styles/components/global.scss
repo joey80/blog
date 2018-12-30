@@ -8,11 +8,7 @@
 }
 
 html {
-    font-size: 14px;
-
-    @include desktop {
-        font-size: 16px;
-    }
+    font-size: 16px;
 }
 
 body {
@@ -42,6 +38,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 0;
     font-size: 1.953rem;
 }
 

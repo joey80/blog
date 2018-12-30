@@ -16,8 +16,8 @@
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.
                         <br />
                         <a href="../pages/single" class="main">Read More ...</a><br />
-                        <button class="button">Hello There</button>
                     </p>
+                    <button class="button">Hello There</button>
                 </div>
                 <?php require APPROOT . '/views/inc/sidebar.php'; ?>
             </section>
