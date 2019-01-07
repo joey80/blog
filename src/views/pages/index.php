@@ -4,7 +4,7 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
         <div class="container container--white container--bump">
             <section class="content">
-                <div class="content__container">
+                <div class="content__container" role="main">
                     <h1><?php echo $test ?></h1>
                     <div id="map"></div>
                     <p>Lorem ipsum dolor sit amet, mea virtute eruditi ad. Pri ea nostro oportere, te eos ornatus assentior.

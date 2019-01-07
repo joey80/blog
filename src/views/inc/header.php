@@ -32,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="header__links">
+            <nav class="header__links" role="navigation">
                 <div class="header__links__container">
                     <div class="header__links__section">
                         <span class="header__links__item">link one</span>
