@@ -1,6 +1,7 @@
 {
     "name": "blog",
     "version": "1.0.0",
+    "description": "A Really Cool Blog",
     "scripts": {
         "start": "node server.js",
         "dev": "webpack-dev-server --open --config webpack.dev.js",
