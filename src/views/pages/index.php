@@ -15,7 +15,7 @@
                         No malorum nominati mel, luptatum deserunt posidonium sea te, eam id inani denique. Falli zril
                         definitionem cu per. Cu prima impetus tacimates vis, dicat volutpat sit ut. Odio nominati mei ad.
                         <br />
-                        <a href="../pages/single" class="main">Read More ...</a><br />
+                        <a href="../pages/single">Read More ...</a><br />
                     </p>
                     <button class="button">Hello There</button>
                 </div>
