@@ -10,13 +10,13 @@ define('DB_NAME', 'heroku_1e81b9a7d04db3f');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URL Root - Local Mac
-//define('URLROOT', 'http://localhost:8888');
+define('URLROOT', 'http://localhost:8888');
 
 // URL Root - Local Windows
 //define('URLROOT', 'http://localhost/blog/');
 
 // URL Root - Production
-define('URLROOT', 'https://joeyui-blog.herokuapp.com');
+//define('URLROOT', 'https://joeyui-blog.herokuapp.com');
 
 // Site Name
 define('SITENAME', 'blogStorn');
