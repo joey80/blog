@@ -3,6 +3,6 @@
     "description": "Cool PHP Blog",
     "type": "project",
     "require": {
-        "php": "^7.1.0"
+        "php": "^8.0.0"
     }
 }
